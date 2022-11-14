@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+}
+
+body{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+    background-image: url(./thermometer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section > *{
+    padding-bottom: 10px;
+}
+
+section div label{
+    padding-left: 10px;
+}
+
+
+#myinput{
+    width: 20vw;
+    padding: 10px;
+    padding-left: 25px;
+    border: 1.5px solid rgb(12, 123, 219);
+    border-radius: 5px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: rgb(195, 205, 214);
+    font-size: 1rem;
+    
+    position: relative;
+       
+}
+
+section{
+    width: 60vw;
+    height: 50vh;
+    background-color: rgba(96, 147, 189, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#myinputlabel{
+    position: absolute;
+    left: 0;
+    padding-left: 25px;
+    padding-top: 10px;
+    
+    transition: 1s;
+}
+
+#myinput:valid ~ #myinputlabel,
+#myinput:focus ~ #myinputlabel{
+    color: rgb(0, 0, 0);
+    transform: translateX(-7px) translateY(-8px);
+    font-size: inherit;
+    padding: 0.10px;
+    margin-left: 35px;
+    background: rgb(195, 205, 214);
+    border-left: 1px solid steelblue;
+    border-right: 1px solid steelblue;
+}
+
+#mylabel{
+    width: 100px;
+    height: 30px;
+    border: 2px solid steelblue;
+    text-align: center;
+    padding-top: 5px;
+    background-color: rgb(58, 58, 252);
+    color: white;
+    font-weight: 600;
+}
+
+#submitbtn{ 
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    background-color: rgb(47, 10, 88);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 100px;
+}
+
+#labeldiv{
+    display: flex;
+    justify-content: center;
+}
